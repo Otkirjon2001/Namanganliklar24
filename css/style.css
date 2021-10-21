@@ -40,13 +40,18 @@ body{
   display: flex;
   align-items: center;
 }
+.logo-link{
+  margin-right: 35px;
+  display: block;
+
+}
 .logo{
   padding: 9px 6px 8px 6px;
   background-color: #fff;
-  margin-right: 41px;
   border-radius: 7px;
 }
 .exchange-rates-items{
+  padding: 0;
   list-style: none;
   display: flex;
 }
