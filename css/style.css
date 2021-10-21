@@ -148,3 +148,6 @@ nav{
 .header-banner-img{
   border-radius: 8px;
 }
+.header-banner-link{
+  display: block;
+}
