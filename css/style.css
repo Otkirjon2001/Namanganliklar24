@@ -14,6 +14,10 @@ body{
 
 
 }
+*:focus{
+  outline: 2px dashed #7296EC;
+  outline-offset: 2px;
+}
 .container{
   width: 100%;
   max-width: 1300px;
@@ -93,9 +97,12 @@ body{
   display: flex;
   align-items: center;
 }
+.search-department-form{
+  margin-right: 25px;
+
+}
 .search-department {
   width: 275px;
-  margin-right: 25px;
   background-color: #fff;
   border-radius: 60px;
   padding-top: 15px;
