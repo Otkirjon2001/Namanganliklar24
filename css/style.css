@@ -42,7 +42,18 @@ body{
 }
 .logo-link{
   margin-right: 35px;
-  display: block;
+  display: flex;
+  transition: opacity 0.4s ease;
+
+}
+.logo-link:hover{
+  opacity: 0.8;
+
+
+}
+.logo-link:active{
+  opacity: 0.6;
+
 
 }
 .logo{
@@ -124,6 +135,15 @@ body{
   padding: 13px 20px;
   border-radius:10px;
   background-color: #7296EC;
+  transition: opacity 0.4s ease;
+}
+.header-button:hover{
+  opacity: 0.8;
+
+}
+.header-button:active{
+  opacity: 0.6;
+
 }
 
 nav{
