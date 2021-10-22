@@ -170,10 +170,17 @@ nav{
   font-size: 18px;
   line-height: 21px;
   color: #7F7F7F;
+  transition: opacity 0.4s ease, color 0.4s ease;
+}
+.nav-item-link:hover{
+  color:#2959CE;
+}
+.nav-item-link:active{
+  opacity: 0.6;
 }
 .header-banner-img{
   border-radius: 8px;
 }
 .header-banner-link{
-  display: block;
+  display: flex;
 }
