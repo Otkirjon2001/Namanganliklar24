@@ -282,6 +282,8 @@ main{
   color: #000000;
 }
 .notifications-button {
+  cursor: pointer;
+  border: 0;
   display: block;
   padding: 13px 30px;
   background-color: #F78B3B;
