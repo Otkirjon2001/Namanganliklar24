@@ -220,12 +220,23 @@ main{
 }
 .latest-news-theme {
   margin-top: 0;
+  margin-bottom: 10px;
+
+}
+.latest-news-link{
+  display: inline-block;
+  text-decoration: none;
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
-  margin-bottom: 10px;
-
+  transition: opacity 0.4s ease, color 0.4s ease;
+}
+.latest-news-link:hover{
+  color:#2959CE;
+}
+.latest-news-link:active{
+  opacity: 0.6;
 }
 .latest-news-text {
   margin-top: 0;
