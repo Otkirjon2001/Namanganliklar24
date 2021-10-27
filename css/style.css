@@ -221,10 +221,16 @@ main{
   align-items: center;
 }
 .latest-news-img {
+  width: 360px;
+  height: 165px;
+  border-radius: 10px;
   display: block;
   margin-bottom: 15px;
 }
 .latest-news-logo {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
   margin-right: 10px;
 }
 .latest-news-small-text {
