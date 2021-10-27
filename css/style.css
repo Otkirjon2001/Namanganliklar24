@@ -412,6 +412,8 @@ main{
   display: block;
 }
 .advertising-banner-img {
+  width: 393px;
+  height: 338px;
   display: flex;
   border-radius:15px;
 }
