@@ -379,6 +379,7 @@ main{
 
 /* MAJOR NEWS */
 .major-news {
+  margin-top: 48px;
   width: 393px;
 }
 .major-content {
