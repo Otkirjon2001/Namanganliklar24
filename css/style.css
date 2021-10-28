@@ -47,6 +47,10 @@ body{
 .heading:active{
   opacity: 0.6;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
 
 /* HEADER */
 header{
@@ -237,7 +241,12 @@ main{
   font-size: 12px;
   line-height: 14px;
   color: #5E5F61;
-  margin: 0;
+  margin: 0 5px 0 0;
+}
+.latest-news-source-time{
+  font-size: 12px;
+  line-height: 14px;
+  color: #5E5F61;
 }
 .notifications-container {
   display: flex;
@@ -348,6 +357,9 @@ main{
   border-radius: 5px;
   margin-right: 10px;
 }
+.world-news-source{
+  margin-right: 5px;
+}
 .show-more {
   text-align: center;
   background-color: #EAEAEA;
@@ -407,6 +419,9 @@ main{
   font-size: 13px;
   line-height: 15px;
   color: #5E5F61;
+}
+.major-news-source{
+  margin-right: 5px;
 }
 .advertising-banner-link {
   display: block;
