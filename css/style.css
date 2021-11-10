@@ -572,3 +572,107 @@ main{
   width: 393px;
   height: 553px;
 }
+
+/* CONTACT */
+.contact-main{
+  margin-bottom: 100px;
+}
+.contact-header{
+  margin-bottom: 60px;
+}
+.contact-heading {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+}
+.contact-content {
+  display: flex;
+}
+.contact-form {
+  margin-right: 10px;
+}
+.contact-form input{
+  padding: 18px 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.user-information {
+  display: flex;
+  margin-bottom: 10px;
+}
+.user-name-information {
+  width: 343px;
+  height: 55px;
+  margin-right: 10px;
+}
+.user-telephone-number {
+  width: 343px;
+  height: 55px;
+  }
+.user-email {
+  display: block;
+  width: 100%;
+  height: 55px;
+  margin-bottom: 10px;
+}
+.user-about-information {
+  display: block;
+  width: 696px;
+  min-height: 180px;
+  margin-bottom: 20px;
+  padding: 18px 20px;
+  resize: vertical;
+}
+.form-button-box{
+  display: flex;
+  justify-content: flex-end;
+}
+.form-button {
+  cursor: pointer;
+  border: none;
+  padding: 17px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  background-color: #7297EF;
+}
+.form-button:hover {
+  opacity: 0.8;
+}
+.form-button:active {
+  opacity: 0.6;
+}
+.contact-about {
+  align-self: start;
+  width: 494px;
+  padding: 40px 20px;
+  border-radius: 10px;
+  background-color: #F6F6F6;
+}
+.site-about-item {
+
+}
+.site-about-item:not(:last-child){
+  border-bottom: 1px solid #D2D2D2;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.site-about-heading {
+  padding: 0;
+  margin: 0 0 7px 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.site-about-text {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
