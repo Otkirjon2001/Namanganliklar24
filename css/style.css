@@ -260,7 +260,10 @@ main{
   justify-content: space-between;
   padding: 25px 71px 25px 29px;
   width: 1050px;
-  background-color: #FFCEAA;
+  background-image: url("../img/notifications-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
   border-radius: 10px;
 }
 .notifications-text {
@@ -672,4 +675,18 @@ main{
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .notifications-box{
+  background-image: url("../img/notifications-bg@2x.jpg");
+  }
+
 }
