@@ -438,6 +438,10 @@ main{
   display: flex;
   border-radius:15px;
 }
+.interesting-main-banner-img{
+  width: 393px;
+  height: 553px;
+}
 
 /* FOOTER */
 .site-footer *:focus{
@@ -570,11 +574,6 @@ main{
   height: 25px;
 }
 
-/* INTERESTING */
-.interesting-main-banner-img{
-  width: 393px;
-  height: 553px;
-}
 
 /* CONTACT */
 .contact-main{
