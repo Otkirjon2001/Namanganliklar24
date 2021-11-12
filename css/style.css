@@ -117,9 +117,13 @@ header{
   padding-top: 15px;
   padding-bottom: 13px;
   padding-left: 41px;
+  padding-right: 15px;
   border: 0;
   font-size: 14px;
   line-height: 17px;
+  background-image: url("../img/search-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 15px  center;
   color: #8D8D8D;
 }
 .language-setting {
@@ -695,5 +699,6 @@ only screen and (                min-resolution: 2dppx) {
   .notifications-box{
   background-image: url("../img/notifications-bg@2x.jpg");
   }
+
 
 }
