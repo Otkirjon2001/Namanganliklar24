@@ -12,9 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> -->
 
   <!-- Styles -->
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/styles.min.css"> -->
 </head>
 
 <body>
@@ -205,7 +205,19 @@
       <div class="container notifications-container">
         <div class="notifications-box">
           <p class="notifications-text">Хотите быть в курсе свежих новостей? Включите уведомления!</p>
-          <button type="submit" class="notifications-button button">Включит </button>
+          <button type="button" class="notifications-button button active-button">Включит </button>
+        </div>
+        <div class="modal-box none">
+          <div class="close-box">
+            <svg class="close-img" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4Z"
+                fill="Currentcolor" opacity=".5" />
+            </svg>
+          </div>
+          <p class="modal-text">Хотите быть в курсе свежих новостей? Включите уведомления!
+          </p>
+          <button type="submit" class="notifications-button button close-button">Включит </button>
         </div>
       </div>
     </section>
@@ -341,7 +353,7 @@
               </div>
             </div>
           </div>
-          <aside class="advertising-banner">
+          <aside class="major-advertising-banner">
             <a class="advertising-banner-link" target="_blank" href="#">
               <img class="advertising-banner-img" width="393" height="338" src="img/advertising-banner.jpg"
                 srcset="img/advertising-banner.jpg 1x, img/advertising-banner@2x.jpg 2x" alt="advertising banner">
@@ -415,6 +427,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
