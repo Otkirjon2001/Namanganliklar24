@@ -1,5 +1,5 @@
 const elSiteButton = document.querySelector(".active-button");
-const elSiteModal = document.querySelector(".modal-box");
+const elSiteModal = document.querySelector(".modal");
 const elSiteInput = document.querySelector(".close-img");
 elSiteButton.addEventListener("click", function () {
   elSiteModal.classList.remove("none");
