@@ -6,5 +6,5 @@ if(elSiteModal){
   });
 }
 setTimeout(function(){
-  elSiteModal.classList.add("modal");
+  elSiteModal.classList.add("modal-open");
 }, 3000)
