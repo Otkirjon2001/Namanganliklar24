@@ -1,10 +1,10 @@
-const elSiteButton = document.querySelector(".active-button");
-const elSiteModal = document.querySelector(".modal");
-const elSiteInput = document.querySelector(".close-img");
-elSiteButton.addEventListener("click", function () {
-  elSiteModal.classList.remove("none");
-
-});
-elSiteInput.addEventListener("click", function () {
-  elSiteModal.classList.add("none");
-});
+const elSiteModal = document.querySelector(".js-modal");
+const elCloseButton = elSiteModal.querySelector(".js-close-box");
+if(elSiteModal){
+  elCloseButton.addEventListener("click", function () {
+    elSiteModal.classList.add("none");
+  });
+}
+setTimeout(function(){
+  elSiteModal.classList.add("modal");
+}, 3000)

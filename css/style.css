@@ -478,14 +478,16 @@ main{
 .major-news-source{
   margin-right: 5px;
 }
-.advertising-banner-link {
-  display: block;
+.major-banner-link {
+  display: flex;
 }
-.advertising-banner-img {
+.major-banner-img {
   width: 393px;
   height: 338px;
-  display: flex;
   border-radius:15px;
+}
+.major-news-banner-link{
+  display: flex;
 }
 .interesting-main-banner-img{
   width: 393px;
@@ -738,6 +740,7 @@ main{
   position: fixed;
   left: 0;
   top: 0;
+  display: block;
   z-index: 1000;
   width: 100%;
   height: 100%;
@@ -748,13 +751,13 @@ main{
 .modal-box{
   position: relative;
   top: 200px;
-  width: 100%;
-  max-width: 850px;
-  margin-right: auto;
-  margin-left: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
+  max-width: 850px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   padding: 50px 170px;
   background-color: #fff;
   border-radius:20px;
@@ -766,9 +769,15 @@ main{
   position: absolute;
   top: 25px;
   right: 25px;
+  padding: 0;
+  border: 0;
+  background-color: var(--footer-text-color);
+  cursor: pointer;
 }
 .close-img{
-  cursor: pointer;
+  display: block;
+  width: 24px;
+  height: 24px;
 }
 .modal-text{
   width: 512px;
