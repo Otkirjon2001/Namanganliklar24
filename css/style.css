@@ -14,7 +14,6 @@
   src: url('../fonts/Rubik-Medium.woff2') format('woff2'),
       url('../fonts/Rubik-Medium.woff') format('woff');
 }
-
 @font-face {
   font-family: 'Rubik';
   font-weight: normal;
@@ -23,7 +22,6 @@
   src: url('../fonts/Rubik-Regular.woff2') format('woff2'),
       url('../fonts/Rubik-Regular.woff') format('woff');
 }
-
 @font-face {
   font-family: 'Rubik';
   font-weight: bold;
@@ -33,7 +31,7 @@
       url('../fonts/Rubik-Bold.woff') format('woff');
 }
 
-/* GLOBAL */
+/* GLOBAL-STYLES */
 html{
   box-sizing: border-box;
   height: 100%;
@@ -49,7 +47,7 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik',"Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -59,6 +57,8 @@ body{
   outline: 2px dashed var(--brand-color);
   outline-offset: 2px;
 }
+
+/* CONTAINER */
 .container{
   max-width: 1300px;
   width: 100%;
@@ -88,6 +88,7 @@ body{
 img{
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -119,8 +120,8 @@ header{
   align-items: center;
 }
 .logo-link{
-  display: flex;
   flex-shrink: 0;
+  display: flex;
   margin-right: 35px;
   transition: opacity 0.4s ease;
 }
@@ -132,8 +133,8 @@ header{
 }
 .logo{
   padding: 9px 6px 8px 6px;
-  background-color: var(--footer-text-color);
   border-radius: 7px;
+  background-color: var(--footer-text-color);
 }
 .exchange-rates-items{
   display: flex;
@@ -164,11 +165,11 @@ header{
   line-height: 17px;
   border: 0;
   border-radius: 60px;
+  color: #8D8D8D;
   background-color: var(--footer-text-color);
   background-image: url("../img/search-icon.svg");
   background-repeat: no-repeat;
   background-position: 15px  center;
-  color: #8D8D8D;
 }
 .language-setting {
   display: flex;
@@ -192,12 +193,12 @@ header{
 }
 .active-language {
   border-radius: 50%;
-  background-color: var(--footer-text-color);
   color: #000;
+  background-color: var(--footer-text-color);
 }
 .header-button {
-  background-color: var(--brand-color);
   color:#fff;
+  background-color: var(--brand-color);
 }
 .header-button:hover{
   opacity: 0.8;
@@ -328,9 +329,9 @@ main{
   display: block;
   padding: 13px 30px;
   border: 0;
-  cursor: pointer;
-  background-color: #F78B3B;
   color:#fff;
+  background-color: #F78B3B;
+  cursor: pointer;
   transition: opacity 0.4s ease;
 }
 .notifications-button:hover{
@@ -423,8 +424,8 @@ main{
   line-height: 19px;
   font-weight: 500;
   border-radius: 10px;
-  background-color: #EAEAEA;
   color: #000000;
+  background-color: #EAEAEA;
   text-decoration: none;
   text-align: center;
 }
@@ -696,10 +697,10 @@ main{
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  cursor: pointer;
   border: none;
   color: var(--footer-text-color);
   background-color: #7297EF;
+  cursor: pointer;
 }
 .form-button:hover {
   opacity: 0.8;
@@ -715,9 +716,9 @@ main{
   background-color: #F6F6F6;
 }
 .site-about-item:not(:last-child){
-  border-bottom: 1px solid #D2D2D2;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  border-bottom: 1px solid #D2D2D2;
 }
 .site-about-heading {
   margin: 0 0 7px 0;
@@ -761,8 +762,8 @@ main{
   margin-right: auto;
   margin-left: auto;
   padding: 50px 170px;
-  background-color: #fff;
   border-radius:20px;
+  background-color: #fff;
 }
 .none{
   display: none;
@@ -798,7 +799,7 @@ main{
   text-align: center;
 }
 
-
+/* MEDIA */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -809,6 +810,4 @@ only screen and (                min-resolution: 2dppx) {
   .notifications-box{
   background-image: url("../img/notifications-bg@2x.jpg");
   }
-
-
 }
