@@ -319,11 +319,11 @@ img{
 }
 
 /* NOTIFICATIONS */
-.notifications-container {
+.notifications__container {
   display: flex;
   justify-content: center;
 }
-.notifications-box {
+.notifications__box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -336,7 +336,7 @@ img{
   background-position: center center;
   background-size: contain;
 }
-.notifications-text {
+.notifications__text {
   width: 404px;
   margin: 0;
   font-weight: 500;
@@ -344,7 +344,7 @@ img{
   line-height: 26px;
   color: #000000;
 }
-.notifications-button {
+.notifications__button {
   display: block;
   padding: 13px 30px;
   border: 0;
@@ -353,10 +353,10 @@ img{
   cursor: pointer;
   transition: opacity 0.4s ease;
 }
-.notifications-button:hover{
+.notifications__button:hover{
   opacity: 0.8;
 }
-.notifications-button:active{
+.notifications__button:active{
   opacity: 0.6;
 }
 
