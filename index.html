@@ -15,75 +15,52 @@
 <body>
   <!-- SITE-HEADER -->
   <header class="site-header">
-    <div class="site-header-top">
-      <div class="container site-header-top-container">
-        <div class="site-header-top-left">
-          <a class="logo-link" href="index.html">
-            <img class="logo" src="img/logo.svg" alt="site-logo" width="276" height="45">
+    <div class="site-header__top">
+      <div class="container site-header__top-container">
+        <div class="site-header__top-left">
+          <a class="site-header__logo logo" href="index.html">
+            <img class="logo__img" src="img/logo.svg" alt="site-logo" width="276" height="45">
           </a>
-          <ul class="exchange-rates-items">
-            <li class="exchange-rates-item"><b>$</b> 10137.2</li>
-            <li class="exchange-rates-item"><b>P</b> 138.26</li>
+          <ul class="site-header__list exchange-rates">
+            <li class="exchange-rates__item"><b>$</b> 10137.2</li>
+            <li class="exchange-rates__item"><b>P</b> 138.26</li>
           </ul>
         </div>
-        <div class="site-header-top-right">
-          <form class="search-department-form">
-            <input class="search-department" type="search" name="search-text" placeholder="Поиск"  aria-label="Поиск" required>
+        <div class="site-header__top-right">
+          <form class="site-header__form">
+            <input class="site-header__input" type="search" name="search-text" placeholder="Поиск"  aria-label="Поиск" required>
           </form>
-          <div class="language-setting">
-            <a class="language active-language" href="#" >УЗ</a>
-            <a class="language" href="#" >РУ</a>
+          <div class="site-header__setting language">
+            <a class="language__item active--language" href="#" >УЗ</a>
+            <a class="language__item" href="#" >РУ</a>
           </div>
-          <a class="header-button button" href="contact.html" >Войти</a>
+          <a class="site-header__button button" href="contact.html" >Войти</a>
         </div>
       </div>
     </div>
-    <nav>
-      <div class="container sitenav-container">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="index.html">Главное</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Интересное</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Экономика</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Политика</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Общество</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Технологии</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Спорт</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Культура</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Происшествия</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Наука</a>
-          </li>
+    <nav class="site-header__sitenav sitenav">
+      <div class="sitenav__container container">
+        <ul class="sitenav__list">
+          <li class="sitenav__item"><a class="sitenav__link" href="#" >Главное</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#" >Интересное</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#" >Экономика</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#" >Политика</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#" >Общество</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#" >Технологии</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#" >Спорт</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#" >Культура</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#" >Происшествия</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#" >Наука</a></li>
         </ul>
-        <hr class="sitenav-hr">
       </div>
     </nav>
-    <div class="header-banner">
-      <div class="container header-banner-container">
-        <aside>
-          <a class="header-banner-link" target="_blank" href="#">
-            <img class="header-banner-img"  src="img/header-banner.jpg" alt="header-banner" width="1200" height="128" srcset="img/header-banner.jpg 1x, img/header-banner@2x.jpg 2x" >
-          </a>
-        </aside>
+    <aside class="site-header__banner banner">
+      <div class="container banner__container">
+        <a class="banner__link" target="_blank" href="#">
+          <img class="banner__img"  src="img/header-banner.jpg" alt="header-banner" width="1200" height="128" srcset="img/header-banner.jpg 1x, img/header-banner@2x.jpg 2x" >
+        </a>
       </div>
-    </div>
+    </aside>
   </header>
   <!-- MAIN-CONTENT -->
   <main class="main-content">

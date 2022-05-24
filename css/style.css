@@ -67,6 +67,8 @@ body{
   margin-right: auto;
   margin-left: auto;
 }
+
+/* BUTTON */
 .button{
   display: inline-block;
   padding: 13px 20px;
@@ -75,15 +77,6 @@ body{
   border-radius:10px;
   transition: opacity 0.4s ease;
   text-decoration: none;
-}
-.heading{
-  transition: opacity 0.4s ease, color 0.4s ease;
-}
-.heading:hover{
-  color: #2959CE;
-}
-.heading:active{
-  opacity: 0.6;
 }
 img{
   max-width: 100%;
@@ -101,64 +94,66 @@ img{
 }
 
 /* HEADER */
-header{
+.site-header{
   margin-bottom: 50px;
 }
-.site-header-top{
+.site-header__top{
   margin-bottom: 30px;
   background-color: #F6F6F6;
 }
-.site-header-top-container{
+.site-header__top-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.site-header-top-left{
+.site-header__top-left{
   display: flex;
   align-items: center;
 }
-.logo-link{
-  flex-shrink: 0;
-  display: flex;
+.site-header__logo{
   margin-right: 35px;
-  transition: opacity 0.4s ease;
-}
-.logo-link:hover{
-  opacity: 0.8;
-}
-.logo-link:active{
-  opacity: 0.6;
 }
 .logo{
+  flex-shrink: 0;
+  display: flex;
+  transition: opacity 0.4s ease;
+}
+.logo:hover{
+  opacity: 0.8;
+}
+.logo:active{
+  opacity: 0.6;
+}
+.logo__img{
   padding: 9px 6px 8px 6px;
   border-radius: 7px;
   background-color: var(--footer-text-color);
 }
-.exchange-rates-items{
+.exchange-rates{
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.exchange-rates-item{
+.exchange-rates__item{
   line-height: 19px;
 }
-.exchange-rates-item b{
+.exchange-rates__item b{
   color: #2959CE;
 }
-.exchange-rates-item:not(:last-child){
+.exchange-rates__item:not(:last-child){
   margin-right: 25px;
 }
-.site-header-top-right {
+.site-header__top-right {
   display: flex;
   align-items: center;
 }
-.search-department-form{
+.site-header__form{
   margin-right: 25px;
 }
-.search-department {
+.site-header__input {
   width: 275px;
   padding: 15px 15px 13px 41px;
   font-size: 14px;
@@ -171,17 +166,19 @@ header{
   background-repeat: no-repeat;
   background-position: 15px  center;
 }
-.language-setting {
+.site-header__setting{
+  margin-right: 25px;
+}
+.language {
   display: flex;
   justify-content: start;
   align-items: center;
   width: 70px;
-  margin-right: 25px;
   padding: 3px;
   border-radius: 39px;
   background-color: #DCE6FF;
 }
-.language {
+.language__item {
   width: 30px;
   height: 30px;
   font-weight: normal;
@@ -191,44 +188,53 @@ header{
   text-decoration: none;
   text-align: center;
 }
-.active-language {
+.active--language {
   border-radius: 50%;
   color: #000;
   background-color: var(--footer-text-color);
 }
-.header-button {
+.site-header__button {
   color:#fff;
   background-color: var(--brand-color);
 }
-.header-button:hover{
+.site-header__button:hover{
   opacity: 0.8;
 }
-.header-button:active{
+.site-header__button:active{
   opacity: 0.6;
 }
-nav{
+.site-header__sitenav{
   margin-bottom: 40px;
 }
-.nav-list {
+.sitenav__list {
   display: flex;
   margin-bottom: 20px;
   padding: 0;
   list-style: none;
 }
-.nav-item:not(:last-child) {
+.sitenav__item:not(:last-child) {
   margin-right: 34.44px;
 }
-.nav-item-link {
+.sitenav__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
   color: #7F7F7F;
   text-decoration: none;
+  transition: opacity 0.4s ease, color 0.4s ease;
 }
-.header-banner-img{
+.sitenav__link:hover{
+  color: #2959CE;
+}
+.sitenav__link:active{
+  opacity: 0.6;
+}
+.banner__img{
+  width: 1200px;
+  height: 128px;
   border-radius: 8px;
 }
-.header-banner-link{
+.banner__link{
   display: flex;
 }
 
