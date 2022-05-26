@@ -193,7 +193,7 @@ img{
   text-decoration: none;
   text-align: center;
 }
-.active--language {
+.language__item--active {
   border-radius: 50%;
   color: #000;
   background-color: var(--footer-text-color);
@@ -551,7 +551,7 @@ img{
   display: inline-flex;
   margin-bottom: 15px;
 }
-.logo--white{
+.logo__img--white{
   background-color: transparent;
 }
 .site-footer__content {
@@ -804,11 +804,23 @@ img{
   text-align: center;
 }
 .modal__turnon-button{
+  display: block;
   padding: 15px 40px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
+  border: 0;
+  color:#fff;
+  background-color: #F78B3B;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
   text-align: center;
+}
+.modal__turnon-button:hover{
+  opacity: 0.8;
+}
+.modal__turnon-button:active{
+  opacity: 0.6;
 }
 
 /* MEDIA */
