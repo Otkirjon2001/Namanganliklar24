@@ -15,284 +15,261 @@
 <body>
   <!-- SITE-HEADER -->
   <header class="site-header">
-    <div class="site-header-top">
-      <div class="container site-header-top-container">
-        <div class="site-header-top-left">
-          <a class="logo-link" href="index.html">
-            <img class="logo" src="img/logo.svg" alt="site-logo" width="276" height="45">
+    <div class="site-header__top">
+      <div class="container site-header__top-container">
+        <div class="site-header__top-left">
+          <a class="site-header__logo logo" href="index.html">
+            <img class="logo__img" src="img/logo.svg" alt="site-logo" width="276" height="45">
           </a>
-          <ul class="exchange-rates-items">
-            <li class="exchange-rates-item"><b>$</b> 10137.2</li>
-            <li class="exchange-rates-item"><b>P</b> 138.26</li>
+          <ul class="site-header__list exchange-rates">
+            <li class="exchange-rates__item"><b>$</b> 10137.2</li>
+            <li class="exchange-rates__item"><b>P</b> 138.26</li>
           </ul>
         </div>
-        <div class="site-header-top-right">
-          <form class="search-department-form">
-            <input class="search-department" type="search" name="search-text" placeholder="Поиск"  aria-label="Поиск" required>
+        <div class="site-header__top-right">
+          <form class="site-header__form">
+            <input class="site-header__input" type="search" name="search-text" placeholder="Поиск"  aria-label="Поиск" required>
           </form>
-          <div class="language-setting">
-            <a class="language active-language" href="#" >УЗ</a>
-            <a class="language" href="#" >РУ</a>
+          <div class="site-header__setting language">
+            <a class="language__item language__item--active" href="#" >УЗ</a>
+            <a class="language__item" href="#" >РУ</a>
           </div>
-          <a class="header-button button" href="contact.html" >Войти</a>
+          <a class="site-header__button button" href="contact.html" >Войти</a>
         </div>
       </div>
     </div>
-    <nav>
-      <div class="container sitenav-container">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="index.html">Главное</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Интересное</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Экономика</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Политика</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Общество</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Технологии</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Спорт</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Культура</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Происшествия</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Наука</a>
-          </li>
+    <nav class="site-header__sitenav sitenav">
+      <div class="sitenav__container container">
+        <ul class="sitenav__list">
+          <li class="sitenav__item"><a class="sitenav__link" href="index.html" >Главное</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Интересное</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Экономика</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Политика</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Общество</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Технологии</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Спорт</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Культура</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Происшествия</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Наука</a></li>
         </ul>
-        <hr class="sitenav-hr">
       </div>
     </nav>
-    <div class="header-banner">
-      <div class="container header-banner-container">
-        <aside>
-          <a class="header-banner-link" target="_blank" href="#">
-            <img class="header-banner-img"  src="img/header-banner.jpg" alt="header-banner" width="1200" height="128" srcset="img/header-banner.jpg 1x, img/header-banner@2x.jpg 2x" >
-          </a>
-        </aside>
+    <aside class="site-header__banner banner">
+      <div class="container banner__container">
+        <a class="banner__link" target="_blank" href="#">
+          <img class="banner__img"  src="img/interesting-header-banner.jpg" alt="header-banner" width="1200" height="128" srcset="img/interesting-header-banner.jpg 1x, img/interesting-header-banner@2x.jpg 2x" >
+        </a>
       </div>
-    </div>
+    </aside>
   </header>
   <!-- MAIN-CONTENT -->
   <main class="main-content">
     <h1 class="visually-hidden">Наманганлыклар 24</h1>
     <!-- ALL-NEWS -->
     <section class="all-news">
-      <div class="container all-news-container">
-        <div class="world-news">
-          <h2 class="world-news-heading">Интересное</h2>
-          <div class="world-news-grid">
-            <article class="world-news-item">
-              <div class="world-news-item-content">
-                <img class="world-news-item-img" src="img/parliament-building.jpg" alt="parliament-building" width="210" height="165"
+      <div class="container all-news__container">
+        <div class="all-news__left world-news">
+          <h2 class="world-news__heading">Интересное</h2>
+          <div class="world-news__grid">
+            <article class="world-news__item important-news">
+              <div class="important-news__content">
+                <img class="important-news__img" src="img/parliament-building.jpg" alt="parliament-building" width="210" height="165"
                   srcset="img/parliament-building.jpg 1x, img/parliament-building@2x.jpg 2x" >
-                <div class="world-news-item-theme">
-                  <h3 class="world-news-item-heading">
-                    <a class="world-news-item-link heading" href="#">Отопление Ташкента на 30 лет переходит в управление французской Veolia</a>
+                <div class="important-news__theme">
+                  <h3 class="important-news__heading">
+                    <a class="important-news__link" href="#">Отопление Ташкента на 30 лет переходит в управление французской Veolia</a>
                   </h3>
-                  <p class="world-news-item-text">Система теплоснабжения Ташкента на 30 лет будет передана в управление французской компании Veolia для модернизации и реконструкции, сообщает 22 сентября пресс-служба...
+                  <p class="important-news__text">Система теплоснабжения Ташкента на 30 лет будет передана в управление французской компании Veolia для модернизации и реконструкции, сообщает 22 сентября пресс-служба...
                   </p>
-                  <div class="world-news-small-text">
-                    <img class="world-news-source-img" src="img/krasnaya-vesna.jpg" alt="" width="20" height="20"
+                  <div class="important-news__footer">
+                    <img class="important-news__source-img" src="img/krasnaya-vesna.jpg" alt="" width="20" height="20"
                       srcset="img/krasnaya-vesna.jpg 1x, img/krasnaya-vesna@2x.jpg 2x"  >
-                    <span class="world-news-source">ИА Красная Весна</span>
+                    <span class="important-news__source-text">ИА Красная Весна</span>
                     <time datetime="15:26:00">15:26</time>
                   </div>
                 </div>
               </div>
             </article>
-            <article class="world-news-item">
-              <div class="world-news-item-content">
-                <img class="world-news-item-img" src="img/apple-office.jpg" alt="merkl" width="210" height="165"
+            <article class="world-news__item important-news">
+              <div class="important-news__content">
+                <img class="important-news__img" src="img/apple-office.jpg" alt="merkl" width="210" height="165"
                   srcset="img/apple-office.jpg 1x, img/apple-office@2x.jpg 2x"  >
-                <div class="world-news-item-theme">
-                  <h3 class="world-news-item-heading">
-                    <a class="world-news-item-link heading" href="#">Пользователи жалуются на новую проблему iPhone 13,связанную с камерой</a>
+                <div class="important-news__theme">
+                  <h3 class="important-news__heading">
+                    <a class="important-news__link" href="#">Пользователи жалуются на новую проблему iPhone 13,связанную с камерой</a>
                   </h3>
-                  <p class="world-news-item-text">Пользователи смартфона Apple iPhone 13 продолжают сообщать о новых
+                  <p class="important-news__text">Пользователи смартфона Apple iPhone 13 продолжают сообщать о новых
                     проблемах, с которыми они сталкиваются при использовании флагмана, поступившего в продажу только
                     позавчера...</p>
-                  <div class="world-news-small-text">
-                    <img class="world-news-source-img" src="img/pepelas-news.png" alt="tass" width="20" height="20"
+                  <div class="important-news__footer">
+                    <img class="important-news__source-img" src="img/pepelas-news.png" alt="tass" width="20" height="20"
                       srcset="img/pepelas-news.png 1x, img/pepelas-news@2x.jpg 2x"  >
-                    <span class="world-news-source">Пепелац Ньюс</span>
+                    <span class="important-news__source-text">Пепелац Ньюс</span>
                     <time datetime="07:35">07:35</time>
                   </div>
                 </div>
               </div>
             </article>
-            <article class="world-news-item">
-              <div class="world-news-item-content">
-                <img class="world-news-item-img" src="img/game-img.jpg" alt="game-img" width="210" height="165"
+            <article class="world-news__item important-news">
+              <div class="important-news__content">
+                <img class="important-news__img" src="img/game-img.jpg" alt="game-img" width="210" height="165"
                   srcset="img/game-img.jpg 1x, img/game-img@2x.jpg 2x"  >
-                <div class="world-news-item-theme">
-                  <h3 class="world-news-item-heading">
-                    <a class="world-news-item-link heading" href="#">Halo Infinite сравнили на Xbox One, Xbox One X,
+                <div class="important-news__theme">
+                  <h3 class="important-news__heading">
+                    <a class="important-news__link" href="#">Halo Infinite сравнили на Xbox One, Xbox One X,
                       Xbox Series S и Xbox Series Xс</a>
                   </h3>
-                  <p class="world-news-item-text">Ютубер с канала ElAnalistaDeBits сравнил Halo Infinite на консолях
+                  <p class="important-news__text">Ютубер с канала ElAnalistaDeBits сравнил Halo Infinite на консолях
                     Xbox One, Xbox One X, Xbox Series S и Xbox Series X. Графика впечатляет на всех платформах. Также
                     отмечается...</p>
-                  <div class="world-news-small-text">
-                    <img class="world-news-source-img" src="img/club-DNS.png" alt="club-DNS" width="20" height="20"
+                  <div class="important-news__footer">
+                    <img class="important-news__source-img" src="img/club-DNS.png" alt="club-DNS" width="20" height="20"
                       srcset="img/club-DNS.png 1x, img/club-DNS@2x.png 2x"  >
-                    <span class="world-news-source">Клуб DNS</span>
+                    <span class="important-news__source-text">Клуб DNS</span>
                     <time datetime="15:33">15:33</time>
                   </div>
                 </div>
               </div>
             </article>
-            <article class="world-news-item">
-              <div class="world-news-item-content">
-                <img class="world-news-item-img" src="img/car-img.jpg" alt="car-img" width="210" height="165"
+            <article class="world-news__item important-news">
+              <div class="important-news__content">
+                <img class="important-news__img" src="img/car-img.jpg" alt="car-img" width="210" height="165"
                   srcset="img/car-img.jpg 1x, img/car-img@2x.jpg 2x"  >
-                <div class="world-news-item-theme">
-                  <h3 class="world-news-item-heading">
-                    <a class="world-news-item-link heading" href="#">В Узбекистане показали тюнинговые варианты моделей Lacetti, Cobalt, Nexia и Spark</a>
+                <div class="important-news__theme">
+                  <h3 class="important-news__heading">
+                    <a class="important-news__link" href="#">В Узбекистане показали тюнинговые варианты моделей Lacetti, Cobalt, Nexia и Spark</a>
                   </h3>
-                  <p class="world-news-item-text">«В сети наши потребители обсуждали тему сильного преобладания белого цвета в модельном ряду UzAuto Motors. Почему вы не делаете двухцветные автомобили? Этот вопрос был...</p>
-                  <div class="world-news-small-text">
-                    <img class="world-news-source-img" src="img/sputnik-uzb.png" alt="sputnik-uzb" width="20" height="20" srcset="img/sputnik-uzb.png 1x, img/sputnik-uzb@2x.jpg 2x" >
-                    <span class="world-news-source">Sputnik Узбекистан</span>
+                  <p class="important-news__text">«В сети наши потребители обсуждали тему сильного преобладания белого цвета в модельном ряду UzAuto Motors. Почему вы не делаете двухцветные автомобили? Этот вопрос был...</p>
+                  <div class="important-news__footer">
+                    <img class="important-news__source-img" src="img/sputnik-uzb.png" alt="sputnik-uzb" width="20" height="20" srcset="img/sputnik-uzb.png 1x, img/sputnik-uzb@2x.jpg 2x" >
+                    <span class="important-news__source-text">Sputnik Узбекистан</span>
                     <time datetime="18:43">18:43</time>
                   </div>
                 </div>
               </div>
             </article>
-            <article class="world-news-item">
-              <div class="world-news-item-content">
-                <img class="world-news-item-img" src="img/iphone-img.jpg" alt="iphone-img" width="210" height="165"
+            <article class="world-news__item important-news">
+              <div class="important-news__content">
+                <img class="important-news__img" src="img/iphone-img.jpg" alt="iphone-img" width="210" height="165"
                   srcset="img/iphone-img.jpg 1x, img/iphone-img@2x.jpg 2x"  >
-                <div class="world-news-item-theme">
-                  <h3 class="world-news-item-heading">
-                    <a class="world-news-item-link heading" href="#">Время автономной работы iPhone 13 Pro Max стало
+                <div class="important-news__theme">
+                  <h3 class="important-news__heading">
+                    <a class="important-news__link" href="#">Время автономной работы iPhone 13 Pro Max стало
                       рекордным для смартфонов Apple</a>
                   </h3>
-                  <p class="world-news-item-text">Линейка смартфонов iPhone 13 от Apple была презентована на прошлой
+                  <p class="important-news__text">Линейка смартфонов iPhone 13 от Apple была презентована на прошлой
                     неделе. Прием предзаказов на устройство стартовал 22 сентября, а 24 сентября новинка появилась в
                     магазинах.</p>
-                  <div class="world-news-small-text">
-                    <img class="world-news-source-img" src="img/iReactor.jpg" alt="iReactor" width="20" height="20"
+                  <div class="important-news__footer">
+                    <img class="important-news__source-img" src="img/iReactor.jpg" alt="iReactor" width="20" height="20"
                       srcset="img/iReactor.jpg 1x, img/iReactor@2x.jpg 2x"  >
-                    <span class="world-news-source">iReactor</span>
+                    <span class="important-news__source-text">iReactor</span>
                     <time datetime="12:25:00">12:25</time>
                   </div>
                 </div>
               </div>
             </article>
-            <article class="world-news-item">
-              <div class="world-news-item-content">
-                <img class="world-news-item-img" src="img/china-flag-bitcoin.jpg" alt="china-flag-bitcoin" width="210" height="165" srcset="img/china-flag-bitcoin.jpg 1x, img/china-flag-bitcoin@2x.jpg 2x" >
-                <div class="world-news-item-theme">
-                  <h3 class="world-news-item-heading">
-                    <a class="world-news-item-link heading" href="#">Криптобиржа Huobi закрыла регистрацию пользователей из Китая</a>
+            <article class="world-news__item important-news">
+              <div class="important-news__content">
+                <img class="important-news__img" src="img/china-flag-bitcoin.jpg" alt="china-flag-bitcoin" width="210" height="165" srcset="img/china-flag-bitcoin.jpg 1x, img/china-flag-bitcoin@2x.jpg 2x" >
+                <div class="important-news__theme">
+                  <h3 class="important-news__heading">
+                    <a class="important-news__link" href="#">Криптобиржа Huobi закрыла регистрацию пользователей из Китая</a>
                   </h3>
-                  <p class="world-news-item-text">Крупнейшая в Китае биржа для торговли биткоинами Huobi приостановила регистрацию пользователей из КНР. Ранее местный Центробанк назвал нелегальными все транзакции...</p>
-                  <div class="world-news-small-text">
-                    <img class="world-news-source-img" src="img/company.jpg" alt="company" width="20" height="20"
+                  <p class="important-news__text">Крупнейшая в Китае биржа для торговли биткоинами Huobi приостановила регистрацию пользователей из КНР. Ранее местный Центробанк назвал нелегальными все транзакции...</p>
+                  <div class="important-news__footer">
+                    <img class="important-news__source-img" src="img/company.jpg" alt="company" width="20" height="20"
                       srcset="img/company.jpg 1x, img/company@2x.jpg 2x"  >
-                    <span class="world-news-source">Компания</span>
+                    <span class="important-news__source-text">Компания</span>
                     <time datetime="11:35">11:35</time>
                   </div>
                 </div>
               </div>
             </article>
-            <article class="world-news-item">
-              <div class="world-news-item-content">
-                <img class="world-news-item-img" src="img/young-people.jpg" alt="young-people" width="210" height="165" srcset="img/young-people.jpg 1x, img/young-people@2x.jpg 2x">
-                <div class="world-news-item-theme">
-                  <h3 class="world-news-item-heading">
-                    <a class="world-news-item-link heading" href="#">В Узбекистане пройдет международный конкурс молодых кинематографистов «Кино за 5 дней»</a>
+            <article class="world-news__item important-news">
+              <div class="important-news__content">
+                <img class="important-news__img" src="img/young-people.jpg" alt="young-people" width="210" height="165" srcset="img/young-people.jpg 1x, img/young-people@2x.jpg 2x">
+                <div class="important-news__theme">
+                  <h3 class="important-news__heading">
+                    <a class="important-news__link" href="#">В Узбекистане пройдет международный конкурс молодых кинематографистов «Кино за 5 дней»</a>
                   </h3>
-                  <p class="world-news-item-text">В Узбекистане 22 сентября стартовал конкурс молодых кинематографистов «Кино за пять дней». Мероприятие проходит в рамках Ташкентского Международного...</p>
-                  <div class="world-news-small-text">
-                    <img class="world-news-source-img" src="img/fergana.jpg" alt="fergana" width="20" height="20"
+                  <p class="important-news__text">В Узбекистане 22 сентября стартовал конкурс молодых кинематографистов «Кино за пять дней». Мероприятие проходит в рамках Ташкентского Международного...</p>
+                  <div class="important-news__footer">
+                    <img class="important-news__source-img" src="img/fergana.jpg" alt="fergana" width="20" height="20"
                       srcset="img/fergana.jpg 1x, img/fergana@2x.jpg 2x"  >
-                    <span class="world-news-source">Фергана</span>
+                    <span class="important-news__source-text">Фергана</span>
                     <time datetime="15:44 ">15:44</time>
                   </div>
                 </div>
               </div>
             </article>
-            <article class="world-news-item">
-              <div class="world-news-item-content">
-                <img class="world-news-item-img" src="img/tesla-img.jpg" alt="tesla-img" width="210" height="165"
+            <article class="world-news__item important-news">
+              <div class="important-news__content">
+                <img class="important-news__img" src="img/tesla-img.jpg" alt="tesla-img" width="210" height="165"
                   srcset="img/tesla-img.jpg 1x, img/tesla-img@2x.jpg 2x"  >
-                <div class="world-news-item-theme">
-                  <h3 class="world-news-item-heading">
-                    <a class="world-news-item-link heading" href="#">Илон Маск принял участие во Всемирной сетевой конференции в Китае</a>
+                <div class="important-news__theme">
+                  <h3 class="important-news__heading">
+                    <a class="important-news__link" href="#">Илон Маск принял участие во Всемирной сетевой конференции в Китае</a>
                   </h3>
-                  <p class="world-news-item-text">Илон Маск (Elon Musk, Руководитель фирмы Tesla и других проектов) уже второй раз за полторы недели обратился к китайским правящим кругам и гражданам.</p>
-                  <div class="world-news-small-text">
-                    <img class="world-news-source-img" src="img/solenka.png" alt="solenka" width="20" height="20"
+                  <p class="important-news__text">Илон Маск (Elon Musk, Руководитель фирмы Tesla и других проектов) уже второй раз за полторы недели обратился к китайским правящим кругам и гражданам.</p>
+                  <div class="important-news__footer">
+                    <img class="important-news__source-img" src="img/solenka.png" alt="solenka" width="20" height="20"
                       srcset="img/solenka.png 1x, img/solenka@2x.jpg 2x"  >
-                    <span class="world-news-source">FBM.ru</span>
+                    <span class="important-news__source-text">FBM.ru</span>
                     <time datetime="22:23">22:23</time>
                   </div>
                 </div>
               </div>
             </article>
           </div>
-          <a class="show-more-link heading" href="#">Показать ещё</a>
+          <a class="world-news__button" href="#">Показать ещё</a>
         </div>
-        <div class="major-news">
-          <div class="major-content">
-            <div class="major-content-theme">
-              <h2 class="major-news-heading">Главное</h2>
-              <div class="major-content-item">
-                <h3 class="major-news-item-heading">
-                  <a class="major-news-item-link heading" href="#">В Фергане создадут узбекско-пакистанский университет</a>
+        <div class="all-news__right major-news">
+          <div class="major-news__content">
+            <div class="major-news__theme">
+              <h2 class="major-news__heading">Главное</h2>
+              <div class="major-news__item local-news">
+                <h3 class="local-news__heading">
+                  <a class="local-news__link" href="#">В Фергане создадут узбекско-пакистанский университет</a>
                 </h3>
-                <div class="major-news-small-text">
-                  <span class="major-news-source">Sputnik Узбекистан</span>
+                <div class="local-news__footer">
+                  <span class="local-news__source">Sputnik Узбекистан</span>
                   <time datetime="14:09">14:09</time>
                 </div>
               </div>
-              <div class="major-content-item">
-                <h3 class="major-news-item-heading">
-                  <a class="major-news-item-link heading" href="#">Узбекистан утвердил соглашение о содействии занятости в странах СНГ</a>
+              <div class="major-news__item local-news">
+                <h3 class="local-news__heading">
+                  <a class="local-news__link" href="#">Узбекистан утвердил соглашение о содействии занятости в странах СНГ</a>
                 </h3>
-                <div class="major-news-small-text">
-                  <span class="major-news-source">ИА Красная Весна</span>
+                <div class="local-news__footer">
+                  <span class="local-news__source">ИА Красная Весна</span>
                   <time datetime="10:19">10:19</time>
                 </div>
               </div>
-              <div class="major-content-item">
-                <h3 class="major-news-item-heading">
-                  <a class="major-news-item-link heading" href="#">В Узбекистане увеличиваются очереди за автомобилями UzAuto  </a>
+              <div class="major-news__item local-news">
+                <h3 class="local-news__heading">
+                  <a class="local-news__link" href="#">В Узбекистане увеличиваются очереди за автомобилями UzAuto  </a>
                 </h3>
-                <div class="major-news-small-text">
-                  <span class="major-news-source">Северная газета (Армянск)</span>
+                <div class="local-news__footer">
+                  <span class="local-news__source">Северная газета (Армянск)</span>
                   <time datetime="13:50">13:50</time>
                 </div>
               </div>
-              <div class="major-content-item">
-                <h3 class="major-news-item-heading">
-                  <a class="major-news-item-link heading" href="#">Минтуризма опровергло приостановку выплат за шаги
+              <div class="major-news__item local-news">
+                <h3 class="local-news__heading">
+                  <a class="local-news__link" href="#">Минтуризма опровергло приостановку выплат за шаги
                   </a>
                 </h3>
-                <div class="major-news-small-text">
-                  <span class="major-news-source">Sputnik Узбекистан</span>
+                <div class="local-news__footer">
+                  <span class="local-news__source">Sputnik Узбекистан</span>
                   <time datetime="14:32">14:32</time>
                 </div>
               </div>
             </div>
           </div>
-          <aside class="major-news-banner">
-            <a class="major-news-banner-link" target="_blank" href="#">
-              <img class="major-news-banner-img interesting-main-banner-img" src="img/interesting-main-banner-img.jpg" alt="interesting-main-banner-img" width="393" height="553" srcset="img/interesting-main-banner-img.jpg 1x, img/interesting-main-banner-img@2x.jpg 2x">
+          <aside class="major-news__banner">
+            <a class="major-news__banner-link" target="_blank" href="#">
+              <img class="major-news__banner-img major-news__banner-img--big" src="img/interesting-main-banner-img.jpg" alt="interesting-main-banner-img" width="393" height="553" srcset="img/interesting-main-banner-img.jpg 1x, img/interesting-main-banner-img@2x.jpg 2x">
             </a>
           </aside>
         </div>
@@ -301,63 +278,60 @@
   </main>
   <!-- SITE-FOOTER -->
   <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-logo-box">
-        <a class="footer-logo-link" href="#" >
-          <img class="footer-logo-img"  src="img/footer-logo.svg" alt="footer-logo" width="264" height="28" >
-        </a>
-      </div>
-      <div class="footer-content">
-        <p class="footer-content-text">Воспроизводство, копирование, использование информации с сайта
-          «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.</p>
-        <ul class="footer-content-list">
-          <li class="list-footer-content">
-            <a class="list-footer-content-link" href="#">Информация о сайте</a>
+    <div class="site-footer__container">
+      <a class="site-footer__logo logo" href="#" >
+          <img class="logo__img logo__img--white"  src="img/footer-logo.svg" alt="footer-logo" width="264" height="28" >
+      </a>
+      <div class="site-footer__content">
+        <p class="site-footer__content-text">Воспроизводство, копирование, использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.</p>
+        <ul class="site-footer__content-list navigation">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Информация о сайте</a>
           </li>
-          <li class="list-footer-content">
-            <a class="list-footer-content-link" href="#">Напишите нам</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Напишите нам</a>
           </li>
-          <li class="list-footer-content">
-            <a class="list-footer-content-link" href="#">Реклама</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Реклама</a>
           </li>
-          <li class="list-footer-content">
-            <a class="list-footer-content-link" href="#">Прислать новость</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Прислать новость</a>
           </li>
         </ul>
-        <ul class="footer-content-items">
-          <li class="item-footer-content">
-            <a class="item-footer-content-link" href="#">Использование материалов</a>
+        <ul class="site-footer__content-list navigation">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Использование материалов</a>
           </li>
-          <li class="item-footer-content">
-            <a class="item-footer-content-link" href="#">Темы дня</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Темы дня</a>
           </li>
-          <li class="item-footer-content">
-            <a class="item-footer-content-link" href="#">Наша команда</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Наша команда</a>
           </li>
         </ul>
       </div>
-      <hr class="footer-hr">
-      <div class="footer-bottom">
-        <h2 class="footer-bottom-text">Наши социальные сети</h2>
-        <ul class="social-media">
-          <li class="social-media-item">
-            <a class="social-media-item-link" href="#">
-              <img class="social-media-img" src="img/facebook-icon.svg" alt="facebook-icon" width="25" height="25" >
+      <hr class="site-footer__hr">
+      <div class="site-footer__bottom">
+        <h2 class="site-footer__bottom-heading">Наши социальные сети</h2>
+        <ul class="site-footer__bottom-list social-media">
+          <li class="social-media__item">
+            <a class="social-media__link" href="#">
+              <img class="social-media__img" src="img/facebook-icon.svg" alt="facebook-icon" width="25" height="25" >
             </a>
           </li>
-          <li class="social-media-item">
-            <a class="social-media-item-link" href="#">
-              <img class="social-media-img" src="img/instagram-icon.svg" alt="instagram-icon" width="25" height="25" >
+          <li class="social-media__item">
+            <a class="social-media__link" href="#">
+              <img class="social-media__img" src="img/instagram-icon.svg" alt="instagram-icon" width="25" height="25" >
             </a>
           </li>
-          <li class="social-media-item">
-            <a class="social-media-item-link" href="#">
-              <img class="social-media-img" src="img/telegram-icon.svg" alt="telegram-icon" width="25" height="25" >
+          <li class="social-media__item">
+            <a class="social-media__link" href="#">
+              <img class="social-media__img" src="img/telegram-icon.svg" alt="telegram-icon" width="25" height="25" >
             </a>
           </li>
-          <li class="social-media-item">
-            <a class="social-media-item-link" href="#">
-              <img class="social-media-img" src="img/youtube-icon.svg" alt="youtube-icon" width="25" height="25" >
+          <li class="social-media__item">
+            <a class="social-media__link" href="#">
+              <img class="social-media__img" src="img/youtube-icon.svg" alt="youtube-icon" width="25" height="25" >
             </a>
           </li>
         </ul>
@@ -366,17 +340,16 @@
   </footer>
   <!-- MODAL -->
   <div class="modal js-modal">
-    <div class="modal-box">
-      <button class="close-box js-close-box" type="button">
-        <svg class="close-img" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+    <div class="modal__box">
+      <button class="modal__close-button js-close-box" type="button">
+        <svg class="modal__close-img" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
           <path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4Z" fill="Currentcolor" opacity=".5" />
         </svg>
       </button>
-      <p class="modal-text">Хотите быть в курсе свежих новостей? Включите уведомления!
+      <p class="modal__text">Хотите быть в курсе свежих новостей? Включите уведомления!
       </p>
-      <button type="submit" class="notifications-button button close-button">Включит </button>
+      <button class="button modal__turnon-button" type="submit" >Включит </button>
     </div>
   </div>
-
   <script src="js/main.js"></script>
 </body>
