@@ -15,103 +15,80 @@
 
 <body>
   <!-- SITE-HEADER -->
-  <header class="contact-header">
-    <div class="site-header-top">
-      <div class="container site-header-top-container">
-        <div class="site-header-top-left">
-          <a class="logo-link" href="index.html">
-            <img class="logo" src="img/logo.svg" alt="site-logo" width="276" height="45">
+  <header class="site-header site-header--contact-page">
+    <div class="site-header__top">
+      <div class="container site-header__top-container">
+        <div class="site-header__top-left">
+          <a class="site-header__logo logo" href="index.html">
+            <img class="logo__img" src="img/logo.svg" alt="site-logo" width="276" height="45">
           </a>
-          <ul class="exchange-rates-items">
-            <li class="exchange-rates-item"><b>$</b> 10137.2</li>
-            <li class="exchange-rates-item"><b>P</b> 138.26</li>
+          <ul class="site-header__list exchange-rates">
+            <li class="exchange-rates__item"><b>$</b> 10137.2</li>
+            <li class="exchange-rates__item"><b>P</b> 138.26</li>
           </ul>
         </div>
-        <div class="site-header-top-right">
-          <form class="search-department-form">
-            <input class="search-department" type="search" name="search-text" placeholder="Поиск"  aria-label="Поиск" required>
+        <div class="site-header__top-right">
+          <form class="site-header__form">
+            <input class="site-header__input" type="search" name="search-text" placeholder="Поиск"  aria-label="Поиск" required>
           </form>
-          <div class="language-setting">
-            <a class="language active-language" href="#" >УЗ</a>
-            <a class="language" href="#" >РУ</a>
+          <div class="site-header__setting language">
+            <a class="language__item language__item--active" href="#" >УЗ</a>
+            <a class="language__item" href="#" >РУ</a>
           </div>
-          <a class="header-button button" href="contact.html" >Войти</a>
+          <a class="site-header__button button" href="contact.html" >Войти</a>
         </div>
       </div>
     </div>
-    <nav>
-      <div class="container sitenav-container">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="index.html">Главное</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Интересное</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Экономика</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Политика</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Общество</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Технологии</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Спорт</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Культура</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Происшествия</a>
-          </li>
-          <li class="nav-item">
-            <a  class="nav-item-link heading" href="list.html">Наука</a>
-          </li>
+    <nav class="site-header__sitenav sitenav">
+      <div class="sitenav__container container">
+        <ul class="sitenav__list">
+          <li class="sitenav__item"><a class="sitenav__link" href="index.html" >Главное</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Интересное</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Экономика</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Политика</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Общество</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Технологии</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Спорт</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Культура</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Происшествия</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="list.html" >Наука</a></li>
         </ul>
-        <hr class="sitenav-hr">
       </div>
     </nav>
   </header>
   <!-- MAIN-CONTENT -->
-  <main class="contact-main">
-    <div class="container contact-container">
-      <h1 class="contact-heading">Напишите нам</h1>
-      <div class="contact-content">
-        <div class="contact-form">
-          <form class="contact-form-user" action="https://echo.htmlacademy.ru" method="POST">
-            <div class="user-information">
-              <input class="user-name-information" type="text" name="user-name" placeholder="Имя" aria-label="user-name" required>
-              <input class="user-telephone-number" type="tel" name="user-telephone-number" placeholder="Номер телефона" aria-label="user-telephone-number" required>
-            </div>
-            <input class="user-email-information" type="email" name="user-email"  placeholder="Электронная почта" aria-label="user-email" required>
-            <textarea class="user-about-information" name="user-about-information" placeholder="Текст" aria-label="user-about-information"></textarea>
-            <div class="form-button-box">
-              <button class="form-button button" type="submit">Отправить</button>
-            </div>
+  <main class="main-content">
+    <div class="contact">
+      <div class="container contact__container">
+        <h1 class="contact__heading">Напишите нам</h1>
+        <div class="contact__content">
+          <form class="contact__form registration" action="https://echo.htmlacademy.ru" method="POST">
+              <div class="registration__user information">
+                <input class="information__input" type="text" name="user-name" placeholder="Имя" aria-label="user-name" required>
+                <input class="information__input" type="tel" name="user-telephone-number" placeholder="Номер телефона" aria-label="user-telephone-number" required>
+              </div>
+              <input class="registration__input" type="email" name="user-email"  placeholder="Электронная почта" aria-label="user-email" required>
+              <textarea class="registration__textarea" name="user-about-information" placeholder="Текст" aria-label="user-about-information"></textarea>
+              <button class="registration__button button" type="submit">Отправить</button>
           </form>
-        </div>
-        <div class="contact-about">
-          <h2 class="visually-hidden">Связаться с нами</h2>
-          <div class="site-about-item">
-            <h3 class="site-about-heading">Электронная почта</h3>
-            <p class="site-about-text">
-              <a href="mailto:info@namanganliklar24.uz?subject=Namanganliklar24.uz%20saytidan%20xabar">info@namanganliklar24.uz</a>
-            </p>
-          </div>
-          <div class="site-about-item">
-            <h3 class="site-about-heading">Номер телефона</h3>
-            <p class="site-about-text">
-              <a href="tel:+998885225476">+998 88 522-54-76</a>
-            </p>
-          </div>
-          <div class="site-about-item">
-            <h3 class="site-about-heading">Адрес</h3>
-            <p class="site-about-text">Ташкент, площадь Мустакиллик, 6 </p>
+          <div class="contact__about">
+            <h2 class="visually-hidden">Связаться с нами</h2>
+            <div class="contact__item communication">
+              <h3 class="communication__heading">Электронная почта</h3>
+              <p class="communication__text">
+                <a class="communication__link" href="mailto:info@namanganliklar24.uz?subject=Namanganliklar24.uz%20saytidan%20xabar">info@namanganliklar24.uz</a>
+              </p>
+            </div>
+            <div class="contact__item communication">
+              <h3 class="communication__heading">Номер телефона</h3>
+              <p class="communication__text">
+                <a class="communication__link" href="tel:+998885225476">+998 88 522-54-76</a>
+              </p>
+            </div>
+            <div class="contact__item communication">
+              <h3 class="communication__heading">Адрес</h3>
+              <p class="communication__text">Ташкент, площадь Мустакиллик, 6 </p>
+            </div>
           </div>
         </div>
       </div>
@@ -119,63 +96,60 @@
   </main>
   <!-- SITE-FOOTER -->
   <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-logo-box">
-        <a class="footer-logo-link" href="#" >
-          <img class="footer-logo-img"  src="img/footer-logo.svg" alt="footer-logo" width="264" height="28" >
-        </a>
-      </div>
-      <div class="footer-content">
-        <p class="footer-content-text">Воспроизводство, копирование, использование информации с сайта
-          «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.</p>
-        <ul class="footer-content-list">
-          <li class="list-footer-content">
-            <a class="list-footer-content-link" href="#">Информация о сайте</a>
+    <div class="site-footer__container">
+      <a class="site-footer__logo logo" href="#" >
+          <img class="logo__img logo__img--white"  src="img/footer-logo.svg" alt="footer-logo" width="264" height="28" >
+      </a>
+      <div class="site-footer__content">
+        <p class="site-footer__content-text">Воспроизводство, копирование, использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.</p>
+        <ul class="site-footer__content-list navigation">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Информация о сайте</a>
           </li>
-          <li class="list-footer-content">
-            <a class="list-footer-content-link" href="#">Напишите нам</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Напишите нам</a>
           </li>
-          <li class="list-footer-content">
-            <a class="list-footer-content-link" href="#">Реклама</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Реклама</a>
           </li>
-          <li class="list-footer-content">
-            <a class="list-footer-content-link" href="#">Прислать новость</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Прислать новость</a>
           </li>
         </ul>
-        <ul class="footer-content-items">
-          <li class="item-footer-content">
-            <a class="item-footer-content-link" href="#">Использование материалов</a>
+        <ul class="site-footer__content-list navigation">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Использование материалов</a>
           </li>
-          <li class="item-footer-content">
-            <a class="item-footer-content-link" href="#">Темы дня</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Темы дня</a>
           </li>
-          <li class="item-footer-content">
-            <a class="item-footer-content-link" href="#">Наша команда</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Наша команда</a>
           </li>
         </ul>
       </div>
-      <hr class="footer-hr">
-      <div class="footer-bottom">
-        <h2 class="footer-bottom-text">Наши социальные сети</h2>
-        <ul class="social-media">
-          <li class="social-media-item">
-            <a class="social-media-item-link" href="#">
-              <img class="social-media-img" src="img/facebook-icon.svg" alt="facebook-icon" width="25" height="25" >
+      <hr class="site-footer__hr">
+      <div class="site-footer__bottom">
+        <h2 class="site-footer__bottom-heading">Наши социальные сети</h2>
+        <ul class="site-footer__bottom-list social-media">
+          <li class="social-media__item">
+            <a class="social-media__link" href="#">
+              <img class="social-media__img" src="img/facebook-icon.svg" alt="facebook-icon" width="25" height="25" >
             </a>
           </li>
-          <li class="social-media-item">
-            <a class="social-media-item-link" href="#">
-              <img class="social-media-img" src="img/instagram-icon.svg" alt="instagram-icon" width="25" height="25" >
+          <li class="social-media__item">
+            <a class="social-media__link" href="#">
+              <img class="social-media__img" src="img/instagram-icon.svg" alt="instagram-icon" width="25" height="25" >
             </a>
           </li>
-          <li class="social-media-item">
-            <a class="social-media-item-link" href="#">
-              <img class="social-media-img" src="img/telegram-icon.svg" alt="telegram-icon" width="25" height="25" >
+          <li class="social-media__item">
+            <a class="social-media__link" href="#">
+              <img class="social-media__img" src="img/telegram-icon.svg" alt="telegram-icon" width="25" height="25" >
             </a>
           </li>
-          <li class="social-media-item">
-            <a class="social-media-item-link" href="#">
-              <img class="social-media-img" src="img/youtube-icon.svg" alt="youtube-icon" width="25" height="25" >
+          <li class="social-media__item">
+            <a class="social-media__link" href="#">
+              <img class="social-media__img" src="img/youtube-icon.svg" alt="youtube-icon" width="25" height="25" >
             </a>
           </li>
         </ul>
@@ -184,15 +158,15 @@
   </footer>
   <!-- MODAL -->
   <div class="modal js-modal">
-    <div class="modal-box">
-      <button class="close-box js-close-box" type="button">
-        <svg class="close-img" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+    <div class="modal__box">
+      <button class="modal__close-button js-close-box" type="button">
+        <svg class="modal__close-img" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
           <path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4Z" fill="Currentcolor" opacity=".5" />
         </svg>
       </button>
-      <p class="modal-text">Хотите быть в курсе свежих новостей? Включите уведомления!
+      <p class="modal__text">Хотите быть в курсе свежих новостей? Включите уведомления!
       </p>
-      <button class="notifications-button button close-button" type="submit" >Включит </button>
+      <button class="button modal__turnon-button" type="submit" >Включит </button>
     </div>
   </div>
 

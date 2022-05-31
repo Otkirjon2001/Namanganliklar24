@@ -651,13 +651,13 @@ img{
 
 
 /* CONTACT */
-.contact-main{
+.site-header--contact-page{
+  margin-bottom: 10px;
+}
+.contact{
   margin-bottom: 100px;
 }
-.contact-header{
-  margin-bottom: 60px;
-}
-.contact-heading {
+.contact__heading {
   margin: 0 0 20px 0;
   padding: 0;
   font-weight: 500;
@@ -665,44 +665,57 @@ img{
   line-height: 28px;
   color: #000;
 }
-.contact-content {
+.contact__content {
   display: flex;
 }
-.contact-form {
+.contact__form {
+  max-width: 696px;
+  width: 100%;
   margin-right: 10px;
 }
-.contact-form input{
+.registration{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* .contact-form input{
   padding: 18px 20px;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-}
-.user-information {
-  display: flex;
+} */
+.registration__user{
   margin-bottom: 10px;
 }
-.user-name-information {
-  width: 343px;
+.information{
+  display: flex;
+}
+.information__input{
+  width: 343px;;
   height: 55px;
-  margin-right: 10px;
+  padding: 18px 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-.user-telephone-number {
-  width: 343px;
-  height: 55px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  }
-.user-email-information {
+.information__input:not(:last-child){
+  margin-right: 10px;
+}
+.registration__input {
   display: block;
   width: 100%;
   height: 55px;
   margin-bottom: 10px;
+  padding: 18px 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-.user-about-information {
+.registration__textarea {
   display: block;
   width: 696px;
   min-height: 180px;
@@ -712,11 +725,7 @@ img{
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-.form-button-box{
-  display: flex;
-  justify-content: flex-end;
-}
-.form-button {
+.registration__button {
   padding: 17px 30px;
   font-weight: 500;
   font-size: 16px;
@@ -726,32 +735,34 @@ img{
   background-color: #7297EF;
   cursor: pointer;
 }
-.form-button:hover {
+.registration__button:hover {
   opacity: 0.8;
 }
-.form-button:active {
+.registration__button:active {
   opacity: 0.6;
 }
-.contact-about {
+.contact__about {
   align-self: start;
   width: 494px;
   padding: 40px 20px;
   border-radius: 10px;
   background-color: #F6F6F6;
 }
-.site-about-item:not(:last-child){
+.contact__item:not(:last-child){
   margin-bottom: 20px;
+}
+.communication:not(:last-child){
   padding-bottom: 20px;
   border-bottom: 1px solid #D2D2D2;
 }
-.site-about-heading {
+.communication__heading {
   margin: 0 0 7px 0;
   padding: 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
 }
-.site-about-text {
+.communication__text {
   margin: 0;
   padding: 0;
   font-weight: normal;
